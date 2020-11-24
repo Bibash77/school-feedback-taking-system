@@ -1,9 +1,9 @@
-package com.customercrud.callcenter;
+package com.customercrud.schoolfeedback;
 
-import com.customercrud.callcenter.base.UserConst;
-import com.customercrud.callcenter.base.UserType;
-import com.customercrud.callcenter.entity.User;
-import com.customercrud.callcenter.repository.UserRepository;
+import com.customercrud.schoolfeedback.base.UserConst;
+import com.customercrud.schoolfeedback.base.UserType;
+import com.customercrud.schoolfeedback.entity.User;
+import com.customercrud.schoolfeedback.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

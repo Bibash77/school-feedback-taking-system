@@ -1,6 +1,6 @@
-package com.customercrud.callcenter.repository;
+package com.customercrud.schoolfeedback.repository;
 
-import com.customercrud.callcenter.entity.QuestionAnswer;
+import com.customercrud.schoolfeedback.entity.QuestionAnswer;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;

@@ -1,8 +1,8 @@
-package com.customercrud.callcenter.services.user;
+package com.customercrud.schoolfeedback.services.user;
 
-import com.customercrud.callcenter.base.UserType;
-import com.customercrud.callcenter.entity.User;
-import com.customercrud.callcenter.repository.UserRepository;
+import com.customercrud.schoolfeedback.base.UserType;
+import com.customercrud.schoolfeedback.entity.User;
+import com.customercrud.schoolfeedback.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

@@ -1,6 +1,6 @@
-package com.customercrud.callcenter.services.questionAnswer;
+package com.customercrud.schoolfeedback.services.questionAnswer;
 
-import com.customercrud.callcenter.entity.QuestionAnswer;
+import com.customercrud.schoolfeedback.entity.QuestionAnswer;
 
 import java.util.List;
 

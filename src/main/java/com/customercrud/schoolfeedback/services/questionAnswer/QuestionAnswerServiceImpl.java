@@ -1,7 +1,7 @@
-package com.customercrud.callcenter.services.questionAnswer;
+package com.customercrud.schoolfeedback.services.questionAnswer;
 
-import com.customercrud.callcenter.entity.QuestionAnswer;
-import com.customercrud.callcenter.repository.FeedbackRepository;
+import com.customercrud.schoolfeedback.entity.QuestionAnswer;
+import com.customercrud.schoolfeedback.repository.FeedbackRepository;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

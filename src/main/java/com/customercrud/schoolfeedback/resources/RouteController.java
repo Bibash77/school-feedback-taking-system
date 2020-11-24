@@ -1,9 +1,9 @@
-package com.customercrud.callcenter.resources;
+package com.customercrud.schoolfeedback.resources;
 
-import com.customercrud.callcenter.base.UserType;
-import com.customercrud.callcenter.entity.User;
-import com.customercrud.callcenter.services.questionAnswer.QuestionAnswerService;
-import com.customercrud.callcenter.services.user.UserService;
+import com.customercrud.schoolfeedback.base.UserType;
+import com.customercrud.schoolfeedback.entity.User;
+import com.customercrud.schoolfeedback.services.questionAnswer.QuestionAnswerService;
+import com.customercrud.schoolfeedback.services.user.UserService;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

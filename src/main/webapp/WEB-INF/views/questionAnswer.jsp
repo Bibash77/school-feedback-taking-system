@@ -198,9 +198,9 @@
                 </div>
                 <div class="custom-control custom-radio col-md-2">
                     <input id="smoothness-five" name="smoothness" type="radio"
-                           class="custom-control-input" value="d.5" required>
+                           class="custom-control-input" value="e.5" required>
                     <label class="custom-control-label d-inline-flex" for="smoothness-five">
-                        d.5
+                        e.5
                     </label>
                 </div>
                 <div class="col-md-12 pt-3">
@@ -263,9 +263,9 @@
                 </div>
                 <div class="custom-control custom-radio col-md-2">
                     <input id="satified-five" name="satified" type="radio"
-                           class="custom-control-input" value="d.5" required>
+                           class="custom-control-input" value="e.5" required>
                     <label class="custom-control-label d-inline-flex" for="satified-five">
-                        d.5
+                        e.5
                     </label>
                 </div>
                 <div class="col-md-12 pt-3">

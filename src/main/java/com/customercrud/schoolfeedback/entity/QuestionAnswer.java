@@ -1,4 +1,4 @@
-package com.customercrud.callcenter.entity;
+package com.customercrud.schoolfeedback.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

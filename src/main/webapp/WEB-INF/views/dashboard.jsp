@@ -15,7 +15,7 @@
         font-family: "Montserrat", sans-serif
     }
 
-    .fa-anchor, .fa-coffee {
+    .fa-university, .fa-coffee {
         font-size: 200px
     }
 </style>
@@ -32,8 +32,8 @@
 <div class="w3-row-padding w3-padding-64 w3-container" style="background-color: white;">
     <div class="w3-content">
         <div class="w3-twothird">
-            <h1>Why ALbright Rising School?</h1>
-            <h5 class="w3-padding-32">We provide our students with a holistic education in a caring, safe and supportive
+            <h1 style="color: black">Why ALbright Rising School?</h1>
+            <h5 class="w3-padding-32" style="color: black">We provide our students with a holistic education in a caring, safe and supportive
                 environment that fosters positive attitudes to learning, and promotes holistic development.</h5>
 
             <p class="w3-text-grey"><strong>ALbright Rising school</strong> is a premier education institution, which
@@ -50,7 +50,7 @@
         </div>
 
         <div class="w3-third w3-center">
-            <i class="fa fa-anchor w3-padding-64 w3-text-blue"></i>
+            <i class="fa fa-university w3-padding-64 w3-text-blue"></i>
         </div>
     </div>
 </div>

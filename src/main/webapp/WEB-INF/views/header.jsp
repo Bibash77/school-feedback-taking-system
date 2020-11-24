@@ -34,8 +34,8 @@
     </script>
     <style>
         .background {
-           /* background-image: linear-gradient(to bottom right, dodgerblue, #fff);*/
-            background-color: dodgerblue;
+            background-image: linear-gradient(to bottom right, dodgerblue, #fff);
+           /* background-color: dodgerblue;*/
         }
 
         .text-secondary {
@@ -49,6 +49,10 @@
         }
         .buttons {
              background-image: linear-gradient(to bottom right, dodgerblue, #fff);
+        }
+        .qn {
+           background-image: linear-gradient( lightgoldenrodyellow , #fff);
+
         }
 
     </style>
@@ -77,12 +81,12 @@
     <div class="w3-bar w3-blue w3-card w3-left-align w3-large" style="letter-spacing:4px;">
         <a href="/home" class="w3-bar-item w3-button w3-padding-large w3-white">Albright Rising School</a>
         <!-- Right-sided navbar links. Hide them on small screens -->
-        <div class="w3-right w3-hide-small">
-            <a class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" id="viewExams" href="${pageContext.request.contextPath}/questionAnswer-list">View Feedbacks</a>
-            <a class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" id="adduser"  href="#" data-toggle="modal" data-target="#registerModal">Add Users</a>
-            <a class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" href="${pageContext.request.contextPath}/questionAnswer" id="takeExam">Give Feedback</a>
-            <a class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" onclick="window.location.href= '/question-answer/'+ sessionStorage.getItem('userId')" id="myexam">My Feedback</a>
-            <a class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" href="${pageContext.request.contextPath}/logout">Logout</a>
+        <div class="w3-right w3-hide-small background">
+            <a class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white background" id="viewExams" href="${pageContext.request.contextPath}/questionAnswer-list">View Feedbacks</a>
+            <a class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white background" id="adduser"  href="#" data-toggle="modal" data-target="#registerModal">Add Users</a>
+            <a class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white background" href="${pageContext.request.contextPath}/questionAnswer" id="takeExam">Give Feedback</a>
+            <a class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white background" onclick="window.location.href= '/question-answer/'+ sessionStorage.getItem('userId')" id="myexam">My Feedback</a>
+            <a class="w3-bar-item w3-button w3-hide-small w3-padding-large background" href="${pageContext.request.contextPath}/logout">Logout</a>
         </div>
     </div>
 </div>

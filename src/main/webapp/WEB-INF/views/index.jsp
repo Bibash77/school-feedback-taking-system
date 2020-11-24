@@ -16,7 +16,7 @@
         .login-box {
             width: 100%;
             margin: auto;
-            max-width: 525px;
+            max-width: 1000px;
             min-height: 670px;
             position: relative;
             background: url(https://images.unsplash.com/photo-1507208773393-40d9fc670acf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1268&q=80) no-repeat center;
@@ -212,7 +212,7 @@
 </head>
 <body class="background">
 <div class="row">
-    <div class="col-md-6 mx-auto p-0">
+    <div class="col-md-12 mx-auto p-0">
         <div class="card" style="    margin-left: 100px; margin-top: 50px">
             <div class="login-box">
                 <div class="login-snip"><input id="tab-1" type="radio" name="tab" class="sign-in" checked><label
@@ -286,6 +286,7 @@
         </div>
     </div>
 </div>
+
 </body>
 <script>
     function registerUser() {

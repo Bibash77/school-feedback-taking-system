@@ -1,6 +1,6 @@
 package com.customercrud.callcenter.repository;
 
-import com.customercrud.callcenter.core.UserType;
+import com.customercrud.callcenter.base.UserType;
 import com.customercrud.callcenter.entity.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;

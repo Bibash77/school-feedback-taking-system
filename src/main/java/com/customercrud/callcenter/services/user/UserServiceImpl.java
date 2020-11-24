@@ -1,6 +1,6 @@
 package com.customercrud.callcenter.services.user;
 
-import com.customercrud.callcenter.core.UserType;
+import com.customercrud.callcenter.base.UserType;
 import com.customercrud.callcenter.entity.User;
 import com.customercrud.callcenter.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;

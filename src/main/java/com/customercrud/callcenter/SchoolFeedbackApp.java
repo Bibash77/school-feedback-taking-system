@@ -1,7 +1,7 @@
 package com.customercrud.callcenter;
 
-import com.customercrud.callcenter.core.UserConst;
-import com.customercrud.callcenter.core.UserType;
+import com.customercrud.callcenter.base.UserConst;
+import com.customercrud.callcenter.base.UserType;
 import com.customercrud.callcenter.entity.User;
 import com.customercrud.callcenter.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,17 +16,17 @@ import javax.annotation.PostConstruct;
 
 @SpringBootApplication
 @EnableSwagger2
-public class CallCenter extends SpringBootServletInitializer {
+public class SchoolFeedbackApp extends SpringBootServletInitializer {
     @Autowired
     private UserRepository userRepository;
 
     public static void main(String[] args) {
-        SpringApplication.run(CallCenter.class, args);
+        SpringApplication.run(SchoolFeedbackApp.class, args);
     }
 
     @Override
     protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
-        return application.sources(CallCenter.class);
+        return application.sources(SchoolFeedbackApp.class);
     }
 
     @PostConstruct

@@ -1,6 +1,6 @@
 package com.customercrud.callcenter.resources;
 
-import com.customercrud.callcenter.core.UserType;
+import com.customercrud.callcenter.base.UserType;
 import com.customercrud.callcenter.entity.User;
 import com.customercrud.callcenter.services.questionAnswer.QuestionAnswerService;
 import com.customercrud.callcenter.services.user.UserService;
@@ -20,7 +20,7 @@ import java.util.List;
 import java.util.Map;
 
 @Controller
-public class ViewController {
+public class RouteController {
     @Autowired
     private UserService userService;
 

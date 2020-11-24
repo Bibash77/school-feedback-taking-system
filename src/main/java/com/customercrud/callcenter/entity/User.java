@@ -1,6 +1,6 @@
 package com.customercrud.callcenter.entity;
 
-import com.customercrud.callcenter.core.UserType;
+import com.customercrud.callcenter.base.UserType;
 import com.sun.istack.internal.NotNull;
 import lombok.Getter;
 import lombok.Setter;

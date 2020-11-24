@@ -1,4 +1,4 @@
-package com.customercrud.callcenter.core;
+package com.customercrud.callcenter.base;
 
 public enum UserType {
     ADMIN , USER

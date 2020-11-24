@@ -1,6 +1,6 @@
 package com.customercrud.callcenter.resources;
 
-import com.customercrud.callcenter.core.UserConst;
+import com.customercrud.callcenter.base.UserConst;
 import com.customercrud.callcenter.entity.QuestionAnswer;
 import com.customercrud.callcenter.entity.User;
 import com.customercrud.callcenter.services.questionAnswer.QuestionAnswerService;
@@ -16,7 +16,7 @@ import java.util.Objects;
 
 @RestController
 @RequestMapping("/questionAnswer")
-public class QuestionAnswerController {
+public class FeedbackController {
     @Autowired // object injection
     private QuestionAnswerService questionAnswerService;
 

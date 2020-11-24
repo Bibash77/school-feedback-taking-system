@@ -1,6 +1,6 @@
 package com.customercrud.callcenter.resources;
 
-import com.customercrud.callcenter.core.UserType;
+import com.customercrud.callcenter.base.UserType;
 import com.customercrud.callcenter.entity.User;
 import com.customercrud.callcenter.services.user.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,7 +15,7 @@ import java.util.stream.Collectors;
 
 @RestController
 @RequestMapping("/user")
-public class UserController {
+public class CustomerController {
     @Autowired
     private UserService userService;
 

@@ -36,8 +36,6 @@ public class SchoolFeedbackApp extends SpringBootServletInitializer {
             User user = new User();
             user.setUserName(UserConst.DEFAULT_USERNAME);
             user.setEmail("admin@gmail.com");
-            user.setGender("male");
-            user.setFullName("Administrator");
             user.setPhoneNumber("9888");
             user.setPasword(UserConst.DEFAULT_PASSWORD);
             user.setUserType(UserType.ADMIN);

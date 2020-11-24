@@ -72,7 +72,7 @@
 <!-- Navbar (sit on top) -->
 <div class="w3-top" id="nav">
     <div class="w3-bar w3-blue w3-card w3-left-align w3-large" style="letter-spacing:4px;">
-        <a href="/home" class="w3-bar-item w3-button w3-padding-large w3-white">Albright Rising School</a>
+        <a href="/home" class="w3-bar-item w3-button w3-padding-large">Albright Rising School</a>
         <!-- Right-sided navbar links. Hide them on small screens -->
         <div class="w3-right w3-hide-small">
             <a class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" id="viewExams" href="${pageContext.request.contextPath}/questionAnswer-list">View Feedbacks</a>

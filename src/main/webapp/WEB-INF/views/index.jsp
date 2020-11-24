@@ -5,7 +5,7 @@
 <html>
 <head>
     <title>Test</title>
-    <style>
+        <style>
         .login-block {
             background: #DE6262; /* fallback for old browsers */
             background: -webkit-linear-gradient(to bottom, #FFB88C, #DE6262); /* Chrome 10-25, Safari 5.1-6 */

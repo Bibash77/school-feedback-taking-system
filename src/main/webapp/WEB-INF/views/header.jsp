@@ -1,15 +1,7 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: Bibash Bogati
-  Date: 11/18/2020
-  Time: 2:10 PM
-  To change this template use File | Settings | File Templates.
---%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Nepal Home Stay</title>
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>Albright Rising School</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -23,8 +15,11 @@
             crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"
             integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script>
+   <script>
         $.ajax({
             url: "${pageContext.request.contextPath}/user/all-cookies",
             type: "get",
@@ -75,15 +70,15 @@
 
 <!-- Navbar (sit on top) -->
 <div class="w3-top" id="nav">
-    <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
-        <a href="/home" class="w3-bar-item w3-button">Treesa Call Center</a>
+    <div class="w3-bar w3-red w3-card w3-left-align w3-large" style="letter-spacing:4px;">
+        <a href="/home" class="w3-bar-item w3-button w3-padding-large w3-white">Albright Rising School</a>
         <!-- Right-sided navbar links. Hide them on small screens -->
         <div class="w3-right w3-hide-small">
-            <a class="w3-bar-item w3-button" id="viewExams" href="${pageContext.request.contextPath}/questionAnswer-list">View Exam</a>
-            <a class="w3-bar-item w3-button" id="adduser"  href="#" data-toggle="modal" data-target="#registerModal">Add Users</a>
-            <a class="w3-bar-item w3-button" href="${pageContext.request.contextPath}/questionAnswer" id="takeExam">Give Exam</a>
-            <a class="w3-bar-item w3-button" onclick="window.location.href= '/question-answer/'+ sessionStorage.getItem('userId')" id="myexam">My Exams</a>
-            <a class="w3-bar-item w3-button" href="${pageContext.request.contextPath}/logout">Logout</a>
+            <a class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" id="viewExams" href="${pageContext.request.contextPath}/questionAnswer-list">View Feedbacks</a>
+            <a class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" id="adduser"  href="#" data-toggle="modal" data-target="#registerModal">Add Users</a>
+            <a class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" href="${pageContext.request.contextPath}/questionAnswer" id="takeExam">Give Feedback</a>
+            <a class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" onclick="window.location.href= '/question-answer/'+ sessionStorage.getItem('userId')" id="myexam">My Feedback</a>
+            <a class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" href="${pageContext.request.contextPath}/logout">Logout</a>
         </div>
     </div>
 </div>

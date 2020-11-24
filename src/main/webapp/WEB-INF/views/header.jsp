@@ -47,6 +47,9 @@
         .curor {
             cursor: pointer;
         }
+        .buttons {
+             background-image: linear-gradient(to bottom right, dodgerblue, #fff);
+        }
 
     </style>
 </head>

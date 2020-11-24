@@ -20,9 +20,5 @@ public class QuestionAnswer {
     @Lob // lob defines long text data field
     private String ratingData;
 
-    private Double totalPercentage;
-
-    private Integer totalPoint;
-
     private LocalDate subbmittedAt;
 }

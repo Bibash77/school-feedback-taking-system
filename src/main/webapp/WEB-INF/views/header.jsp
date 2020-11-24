@@ -34,7 +34,8 @@
     </script>
     <style>
         .background {
-            background-image: linear-gradient(to bottom right, orangered, #fff);
+           /* background-image: linear-gradient(to bottom right, dodgerblue, #fff);*/
+            background-color: dodgerblue;
         }
 
         .text-secondary {
@@ -70,7 +71,7 @@
 
 <!-- Navbar (sit on top) -->
 <div class="w3-top" id="nav">
-    <div class="w3-bar w3-red w3-card w3-left-align w3-large" style="letter-spacing:4px;">
+    <div class="w3-bar w3-blue w3-card w3-left-align w3-large" style="letter-spacing:4px;">
         <a href="/home" class="w3-bar-item w3-button w3-padding-large w3-white">Albright Rising School</a>
         <!-- Right-sided navbar links. Hide them on small screens -->
         <div class="w3-right w3-hide-small">

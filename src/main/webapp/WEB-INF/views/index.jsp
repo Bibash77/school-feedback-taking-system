@@ -68,7 +68,7 @@
         .login-snip .sign-in:checked + .tab,
         .login-snip .sign-up:checked + .tab {
             color: #fff;
-            border-color: #1161ee
+            border-color: dodgerblue
         }
 
         .login-space {
@@ -109,7 +109,7 @@
         }
 
         .login-space .group .button {
-            background-image: linear-gradient(to bottom right, orangered, #fff);
+            background-image: linear-gradient(to bottom right, dodgerblue, #fff);
         }
 
         .login-space .group label .icon {
@@ -148,10 +148,10 @@
             color: #fff
         }
 
-        .login-space .group .check:checked + label .icon {
-            background-image: linear-gradient(to bottom right, orangered, #fff);
-        }
 
+        .login-space .group .check:checked + label .icon {
+            background-image: linear-gradient(to bottom right, dodgerblue, #fff);
+        }
         .login-space .group .check:checked + label .icon:before {
             transform: scale(1) rotate(45deg)
         }

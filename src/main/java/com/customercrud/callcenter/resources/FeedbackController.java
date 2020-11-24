@@ -12,6 +12,8 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.time.LocalDate;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Objects;
 
 @RestController
@@ -31,13 +33,9 @@ public class FeedbackController {
         try {
             User user = userService.findById(Integer.parseInt(id));
             QuestionAnswer savequestionAnswer= new QuestionAnswer();
-            Double percentObtain = questionAnswer.getTotalPoint()/ UserConst.FULL_MARK * 100;
-            savequestionAnswer.setTotalPercentage(percentObtain);
             savequestionAnswer.setRatingData(questionAnswer.getRatingData());
             savequestionAnswer.setId(Integer.parseInt(id));
             savequestionAnswer.setSubbmittedAt(LocalDate.now());
-            savequestionAnswer.setTotalPoint(questionAnswer.getTotalPoint());
-
             user.setQuestionAnswer(questionAnswerService.addQuestionAnswer(savequestionAnswer));
             userService.addUser(user);
 

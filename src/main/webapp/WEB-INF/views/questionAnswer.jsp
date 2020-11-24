@@ -81,7 +81,7 @@
 
 </style>
 <body class="background">
-<div style="border: double #ffffff; margin-top: 110px;">
+<div style="border: inset thick grey; margin-top: 110px;">
     <div class="row">
         <div class="offset-4 col-md-4">
             <h4 class="text-white"><u>Submit Your Answers</u></h4>
@@ -92,342 +92,322 @@
 
         </div>
         <div class="col-md-12 pb-3">
-            <label>1.When was Spice Nepal was rebranded as Mero Mobile?</label>
+            <label>1. Did you find the correct choice with the help of this app?</label>
 
-            <div class="custom-control custom-radio">
-                <input id="spiceNepal-2004" name="spiceNepal" type="radio"
-                       class="custom-control-input" value="a.2004 A.D"
+            <div class="custom-control custom-radio ">
+                <input id="choice-yes" name="choice" type="radio"
+                       class="custom-control-input" value="a.Yes"
                        required>
-                <label class="custom-control-label d-inline-flex" for="spiceNepal-2004">
-                    a.2004 A.D
+                <label class="custom-control-label d-inline-flex" for="choice-yes">
+                    a.Yes
                 </label>
             </div>
             <div class="custom-control custom-radio">
-                <input  name="spiceNepal" type="radio" value="b.2005 A.D" class="custom-control-input" id="spiceNepal-2005">
-                <label class="custom-control-label d-inline-flex" for="spiceNepal-2005">
-                    b.2005 A.D
+                <input  name="choice" type="radio" value="b.No" class="custom-control-input" id="choice-no">
+                <label class="custom-control-label d-inline-flex" for="choice-no">
+                    b.No
                 </label>
             </div>
             <div class="custom-control custom-radio">
-                <input  name="spiceNepal" type="radio" class="custom-control-input" value="c.2008 A.D" required id="spiceNepal-2008">
-                <label class="custom-control-label d-inline-flex" for="spiceNepal-2008" >
-                    c.2008 A.D
-                </label>
-            </div>
-            <div class="custom-control custom-radio">
-                <input  name="spiceNepal" type="radio" class="custom-control-input" id="spiceNepal-2010" value="d.2010 A.D">
-                <label class="custom-control-label d-inline-flex" for="spiceNepal-2010">
-                    d.2010 A.D
+                <input  name="choice" type="radio" class="custom-control-input" value="c.May Be" required id="choice-maybe">
+                <label class="custom-control-label d-inline-flex" for="choice-maybe" >
+                    c.May Be
                 </label>
             </div>
         </div>
 
         <div class="col-md-12 pb-3">
-            <label>2) What is the call rate per min?</label>
+            <label>2. On the scale of 1 to 5. Rate the variety of choices provided by the system.</label>
             <div class="custom-control custom-radio">
-                <input id="callRate-2.54" name="callRate" type="radio" class="custom-control-input" value="a. 2.54Rs" required>
-                <label class="custom-control-label d-inline-flex" for="callRate-2.54">
-                    a. 2.54Rs
+                <input id="rate-one" name="rate" type="radio" class="custom-control-input" value="a.1" required>
+                <label class="custom-control-label d-inline-flex" for="rate-one">
+                    a.1
                 </label>
             </div>
             <div class="custom-control custom-radio">
-                <input id="callRate-2.52" name="callRate" type="radio" value="b. 2.52Rs" class="custom-control-input" required>
-                <label class="custom-control-label d-inline-flex" for="callRate-2.52">
-                    b. 2.52Rs
+                <input id="rate-two" name="rate" type="radio" value="b.2" class="custom-control-input" required>
+                <label class="custom-control-label d-inline-flex" for="rate-two">
+                    b.2
                 </label>
             </div>
             <div class="custom-control custom-radio">
-                <input id="callRate-2.56" name="callRate" type="radio" value="c. 2.56Rs" class="custom-control-input" required>
-                <label class="custom-control-label d-inline-flex" for="callRate-2.56">
-                    c. 2.56Rs
+                <input id="rate-three" name="rate" type="radio" value="c.3" class="custom-control-input" required>
+                <label class="custom-control-label d-inline-flex" for="rate-three">
+                    c.3
                 </label>
             </div>
             <div class="custom-control custom-radio">
-                <input id="callRate-2.55" name="callRate" type="radio" class="custom-control-input" value="d. 2.55Rs" required>
-                <label class="custom-control-label d-inline-flex" for="callRate-2.55">
-                    d. 2.55Rs
-                </label>
-            </div>
-        </div>
-        <div class="col-md-12 pb-3">
-            <label>3) How many time you can transfer the balance?</label>
-            <div class="custom-control custom-radio">
-                <input id="balanceTranasferTimes-2" name="balanceTranasferTimes" type="radio" class="custom-control-input" value="a. 2" required>
-                <label class="custom-control-label d-inline-flex" for="balanceTranasferTimes-2">
-                    a. 2
+                <input id="rate-four" name="rate" type="radio" class="custom-control-input" value="d.4" required>
+                <label class="custom-control-label d-inline-flex" for="rate-four">
+                    d.4
                 </label>
             </div>
             <div class="custom-control custom-radio">
-                <input id="balanceTranasferTimes-3" name="balanceTranasferTimes" type="radio" value="b. 3" class="custom-control-input" required>
-                <label class="custom-control-label d-inline-flex" for="balanceTranasferTimes-3">
-                    b. 3
-                </label>
-            </div>
-            <div class="custom-control custom-radio">
-                <input id="balanceTranasferTimes-4" name="balanceTranasferTimes" type="radio" value="c. 4" class="custom-control-input" required>
-                <label class="custom-control-label d-inline-flex" for="balanceTranasferTimes-4">
-                    c. 4
-                </label>
-            </div>
-            <div class="custom-control custom-radio">
-                <input id="balanceTranasferTimes-none" name="balanceTranasferTimes" type="radio" class="custom-control-input" value="d. None of the above" required>
-                <label class="custom-control-label d-inline-flex" for="balanceTranasferTimes-none">
-                    d. None of the above
+                <input id="rate-five" name="rate" type="radio" class="custom-control-input" value="d.5" required>
+                <label class="custom-control-label d-inline-flex" for="rate-five">
+                    d.5
                 </label>
             </div>
         </div>
         <div class="col-md-12 pb-3">
-            <label>4) Postpaid user can take the loan</label>
+            <label>3. On the scale of 1 to 5. Rate the smoothness of the School's Information Collection Centre
+            </label>
             <div class="custom-control custom-radio">
-                <input id="postoaidUserLoan-true" name="postoaidUserLoan" type="radio" class="custom-control-input" value="a. True" required>
-                <label class="custom-control-label d-inline-flex" for="postoaidUserLoan-true">
-                    a. True
+                <input id="smoothness-one" name="smoothness" type="radio" class="custom-control-input" value="a.1" required>
+                <label class="custom-control-label d-inline-flex" for="smoothness-one">
+                    a.1
                 </label>
             </div>
             <div class="custom-control custom-radio">
-                <input id="postoaidUserLoan-false" name="postoaidUserLoan" type="radio" value="b. False" class="custom-control-input" required>
-                <label class="custom-control-label d-inline-flex" for="postoaidUserLoan-false">
-                    b. False
-                </label>
-            </div>
-        </div>
-        <div class="col-md-12 pb-3">
-            <label>5)How many time customer can freely call 9005?</label>
-            <div class="custom-control custom-radio">
-                <input id="customerFreeCall-10" name="customerFreeCall" type="radio" class="custom-control-input" value="a. 10" required>
-                <label class="custom-control-label d-inline-flex" for="customerFreeCall-10">
-                    a. 10
+                <input id="smoothness-two" name="smoothness" type="radio" value="b.2" class="custom-control-input" required>
+                <label class="custom-control-label d-inline-flex" for="smoothness-two">
+                    b.2
                 </label>
             </div>
             <div class="custom-control custom-radio">
-                <input id="customerFreeCall-20" name="customerFreeCall" type="radio" value="b. 20" class="custom-control-input" required>
-                <label class="custom-control-label d-inline-flex" for="customerFreeCall-20">
-                    b. 20
+                <input id="smoothness-three" name="smoothness" type="radio" value="c.3" class="custom-control-input" required>
+                <label class="custom-control-label d-inline-flex" for="smoothness-three">
+                    c.3
                 </label>
             </div>
             <div class="custom-control custom-radio">
-                <input id="customerFreeCall-30" name="customerFreeCall" type="radio" value="c. 30" class="custom-control-input" required>
-                <label class="custom-control-label d-inline-flex" for="customerFreeCall-30">
-                    c. 30
+                <input id="smoothness-four" name="smoothness" type="radio" class="custom-control-input" value="d.4" required>
+                <label class="custom-control-label d-inline-flex" for="smoothness-four">
+                    d.4
                 </label>
             </div>
             <div class="custom-control custom-radio">
-                <input id="customerFreeCall-none" name="customerFreeCall" type="radio" class="custom-control-input" value="d. None of the above" required>
-                <label class="custom-control-label d-inline-flex" for="customerFreeCall-none">
-                    d. None of the above
+                <input id="smoothness-five" name="smoothness" type="radio" class="custom-control-input" value="d.5" required>
+                <label class="custom-control-label d-inline-flex" for="smoothness-five">
+                    d.5
                 </label>
             </div>
         </div>
         <div class="col-md-12 pb-3">
-            <label>6) Where customer can complain their problem?</label>
+            <label>4) Which of the following best describes the area of the school you preferred?</label>
             <div class="custom-control custom-radio">
-                <input id="customerComplain-9005" name="customerComplain" type="radio" class="custom-control-input" value="a. 9005" required>
-                <label class="custom-control-label d-inline-flex" for="customerComplain-9005">
-                    a. 9005
+                <input id="area-Kathmandu" name="area" type="radio" class="custom-control-input" value="a.Kathmandu" required>
+                <label class="custom-control-label d-inline-flex" for="area-Kathmandu">
+                    a.Kathmandu
                 </label>
             </div>
             <div class="custom-control custom-radio">
-                <input id="customerComplain-9006" name="customerComplain" type="radio" value="b. 9006" class="custom-control-input" required>
-                <label class="custom-control-label d-inline-flex" for="customerComplain-9006">
-                    b. 9006
+                <input id="area-Bhaktapur" name="area" type="radio" value="b.Bhaktapur" class="custom-control-input" required>
+                <label class="custom-control-label d-inline-flex" for="area-Bhaktapur">
+                    b.Bhaktapur
                 </label>
             </div>
             <div class="custom-control custom-radio">
-                <input id="customerComplain-9004" name="customerComplain" type="radio" value="c. 9004" class="custom-control-input" required>
-                <label class="custom-control-label d-inline-flex" for="customerComplain-9004">
-                    c. 9004
+                <input id="area-Lalitpur" name="area" type="radio" value="c.Lalitpur" class="custom-control-input" required>
+                <label class="custom-control-label d-inline-flex" for="area-Lalitpur">
+                    c.Lalitpur
+                </label>
+            </div>
+
+        </div>
+        <div class="col-md-12 pb-3">
+            <label>5)How strongly are you satisfied with the rating of school provided by the system (1-5)</label>
+            <div class="custom-control custom-radio">
+                <input id="satified-one" name="satified" type="radio" class="custom-control-input" value="a.1" required>
+                <label class="custom-control-label d-inline-flex" for="satified-one">
+                    a.1
                 </label>
             </div>
             <div class="custom-control custom-radio">
-                <input id="customerComplain-9008" name="customerComplain" type="radio" class="custom-control-input" value="d. 9008" required>
-                <label class="custom-control-label d-inline-flex" for="customerComplain-9008">
-                    d. 9008
+                <input id="satified-two" name="satified" type="radio" value="b.2" class="custom-control-input" required>
+                <label class="custom-control-label d-inline-flex" for="satified-two">
+                    b.2
+                </label>
+            </div>
+            <div class="custom-control custom-radio">
+                <input id="satified-three" name="satified" type="radio" value="c.3" class="custom-control-input" required>
+                <label class="custom-control-label d-inline-flex" for="satified-three">
+                    c.3
+                </label>
+            </div>
+            <div class="custom-control custom-radio">
+                <input id="satified-four" name="satified" type="radio" class="custom-control-input" value="d.4" required>
+                <label class="custom-control-label d-inline-flex" for="satified-four">
+                    d.4
+                </label>
+            </div>
+            <div class="custom-control custom-radio">
+                <input id="satified-five" name="satified" type="radio" class="custom-control-input" value="d.5" required>
+                <label class="custom-control-label d-inline-flex" for="satified-five">
+                    d.5
                 </label>
             </div>
         </div>
         <div class="col-md-12 pb-3">
-            <label>7) Do you need Pin.no to transfer the balance?</label>
+            <label>6)  I would imagine that most people would learn to use this system very quickly</label>
             <div class="custom-control custom-radio">
-                <input id="pin-yes" name="pin" type="radio" class="custom-control-input" value="a. Yes" required>
-                <label class="custom-control-label d-inline-flex" for="pin-yes">
-                    a. Yes
+                <input id="learn-strong" name="learn" type="radio" class="custom-control-input" value="a.Strongly Agree" required>
+                <label class="custom-control-label d-inline-flex" for="learn-strong">
+                    a.Strongly Agree
                 </label>
             </div>
             <div class="custom-control custom-radio">
-                <input id="pin-No" name="pin" type="radio" value="b. No" class="custom-control-input" required>
-                <label class="custom-control-label d-inline-flex" for="pin-No">
-                    b. No
-                </label>
-            </div>
-        </div>
-        <div class="col-md-12 pb-3">
-            <label>8)  I have damaged the recharge pin.no but I have correct serial.no. Can I recharge it or not?</label>
-            <div class="custom-control custom-radio">
-                <input id="recharge-yes" name="recharge" type="radio" class="custom-control-input" value="a. Yes" required>
-                <label class="custom-control-label d-inline-flex" for="recharge-yes">
-                    a. Yes
+                <input id="learn-Agree" name="learn" type="radio" value="b.Agree" class="custom-control-input" required>
+                <label class="custom-control-label d-inline-flex" for="learn-Agree">
+                    b.Agree
                 </label>
             </div>
             <div class="custom-control custom-radio">
-                <input id="recharge-No" name="recharge" type="radio" value="b. No" class="custom-control-input" required>
-                <label class="custom-control-label d-inline-flex" for="recharge-No">
-                    b. No
+                <input id="learn-satisfied" name="learn" type="radio" value="c.Satisfied" class="custom-control-input" required>
+                <label class="custom-control-label d-inline-flex" for="learn-satisfied">
+                    c.Satisfied
+                </label>
+            </div>
+            <div class="custom-control custom-radio">
+                <input id="learn-not" name="learn" type="radio" class="custom-control-input" value="d.Not okay" required>
+                <label class="custom-control-label d-inline-flex" for="learn-not">
+                    d.Not okay
                 </label>
             </div>
         </div>
         <div class="col-md-12 pb-3">
-            <label>9) 4g is available in urban areas only?</label>
+            <label>7.  Was the system user friendly?
+            </label>
             <div class="custom-control custom-radio">
-                <input id="fourG-yes" name="fourG" type="radio" class="custom-control-input" value="a. True" required>
-                <label class="custom-control-label d-inline-flex" for="fourG-yes">
-                    a. True
+                <input id="friendly-yes" name="friendly" type="radio"
+                       class="custom-control-input" value="a.Yes"
+                       required>
+                <label class="custom-control-label d-inline-flex" for="friendly-yes">
+                    a.Yes
                 </label>
             </div>
             <div class="custom-control custom-radio">
-                <input id="fourG-No" name="fourG" type="radio" value="b. False" class="custom-control-input" required>
-                <label class="custom-control-label d-inline-flex" for="fourG-No">
-                    b. False
-                </label>
-            </div>
-        </div>
-        <div class="col-md-12 pb-3">
-            <label>10) How can you check if your name has been registered or not?</label>
-            <div class="custom-control custom-radio">
-                <input id="nameRegister-901" name="nameRegister" type="radio" class="custom-control-input" value="a. *901#" required>
-                <label class="custom-control-label d-inline-flex" for="nameRegister-901">
-                    a. *901#
+                <input  name="friendly" type="radio" value="b.No" class="custom-control-input" id="friendly-no">
+                <label class="custom-control-label d-inline-flex" for="friendly-no">
+                    b.No
                 </label>
             </div>
             <div class="custom-control custom-radio">
-                <input id="nameRegister-902" name="nameRegister" type="radio" value="b. *902#" class="custom-control-input" required>
-                <label class="custom-control-label d-inline-flex" for="nameRegister-902">
-                    b. *902#
-                </label>
-            </div>
-            <div class="custom-control custom-radio">
-                <input id="nameRegister-903" name="nameRegister" type="radio" value="c. *903#" class="custom-control-input" required>
-                <label class="custom-control-label d-inline-flex" for="nameRegister-903">
-                    c. *903#
-                </label>
-            </div>
-            <div class="custom-control custom-radio">
-                <input id="nameRegister-none" name="nameRegister" type="radio" class="custom-control-input" value="d. None of the Above" required>
-                <label class="custom-control-label d-inline-flex" for="nameRegister-none">
-                    d. None of the Above
+                <input  name="friendly" type="radio" class="custom-control-input" value="c.May Be" required id="friendly-maybe">
+                <label class="custom-control-label d-inline-flex" for="friendly-maybe" >
+                    c.May Be
                 </label>
             </div>
         </div>
         <div class="col-md-12 pb-3">
-            <label>11) What are the requirements to upgrade sim to 4g?</label>
+            <label>8)  The interface of the system was pleasant. scale (1-5)</label>
             <div class="custom-control custom-radio">
-                <input id="requirements-100" name="requirements" type="radio" class="custom-control-input" value="a. Original Document/Photo/100Rs" required>
-                <label class="custom-control-label d-inline-flex" for="requirements-100">
-                    a. Original Document/Photo/100Rs
+                <input id="interface-one" name="interface" type="radio" class="custom-control-input" value="a.1" required>
+                <label class="custom-control-label d-inline-flex" for="interface-one">
+                    a.1
                 </label>
             </div>
             <div class="custom-control custom-radio">
-                <input id="requirements-1" name="requirements" type="radio" value="b. Original Document/Photo/1Rs" class="custom-control-input" required>
-                <label class="custom-control-label d-inline-flex" for="requirements-1">
-                    b. Original Document/Photo/1Rs
+                <input id="interface-two" name="interface" type="radio" value="b.2" class="custom-control-input" required>
+                <label class="custom-control-label d-inline-flex" for="interface-two">
+                    b.2
                 </label>
             </div>
             <div class="custom-control custom-radio">
-                <input id="requirements-doc" name="requirements" type="radio" value="c. Original Document only" class="custom-control-input" required>
-                <label class="custom-control-label d-inline-flex" for="requirements-doc">
-                    c. Original Document only
+                <input id="interface-three" name="interface" type="radio" value="c.3" class="custom-control-input" required>
+                <label class="custom-control-label d-inline-flex" for="interface-three">
+                    c.3
                 </label>
             </div>
             <div class="custom-control custom-radio">
-                <input id="requirements-none" name="requirements" type="radio" class="custom-control-input" value="d. None of the above " required>
-                <label class="custom-control-label d-inline-flex" for="requirements-none">
-                    d. None of the above
+                <input id="interface-four" name="interface" type="radio" class="custom-control-input" value="d.4" required>
+                <label class="custom-control-label d-inline-flex" for="interface-four">
+                    d.4
+                </label>
+            </div>
+            <div class="custom-control custom-radio">
+                <input id="interface-five" name="interface" type="radio" class="custom-control-input" value="d.5" required>
+                <label class="custom-control-label d-inline-flex" for="interface-five">
+                    d.5
                 </label>
             </div>
         </div>
         <div class="col-md-12 pb-3">
-            <label>12) How can you check your balance?</label>
+            <label>9. How system relevant do you find the accuracy of School's Detail?</label>
             <div class="custom-control custom-radio">
-                <input id="balance-100" name="balance" type="radio" class="custom-control-input" value="a. *901#" required>
-                <label class="custom-control-label d-inline-flex" for="balance-100">
-                    a. *901#
+                <input id="accurate-high" name="accurate" type="radio" class="custom-control-input" value="a.Highly Accurate" required>
+                <label class="custom-control-label d-inline-flex" for="accurate-high">
+                    a.Highly Accurate
                 </label>
             </div>
             <div class="custom-control custom-radio">
-                <input id="balanceSms" name="balance" type="radio" value="b. Type A and Send  90011" class="custom-control-input" required>
-                <label class="custom-control-label d-inline-flex" for="balanceSms">
-                    b. Type A and Send  90011
+                <input id="accurate-acc" name="accurate" type="radio" value="b.Accurate" class="custom-control-input" required>
+                <label class="custom-control-label d-inline-flex" for="accurate-acc">
+                    b.Accurate
                 </label>
             </div>
             <div class="custom-control custom-radio">
-                <input id="balanceDail" name="balance" type="radio" value="c. Dail 901 and follow the instruction" class="custom-control-input" required>
-                <label class="custom-control-label d-inline-flex" for="balanceDail">
-                    c. Dail 901 and follow the instruction
+                <input id="accurate-low" name="accurate" type="radio" value="c.Less Accurate" class="custom-control-input" required>
+                <label class="custom-control-label d-inline-flex" for="accurate-low">
+                    c.Less Accurate
+                </label>
+            </div>
+        </div>
+        <div class="col-md-12 pb-3">
+            <label>10. Would you recommend the School's Information Collection centre to other guardians?</label>
+            <div class="custom-control custom-radio">
+                <input id="recommand-yes" name="recommand" type="radio"
+                       class="custom-control-input" value="a.Yes"
+                       required>
+                <label class="custom-control-label d-inline-flex" for="recommand-yes">
+                    a.Yes
                 </label>
             </div>
             <div class="custom-control custom-radio">
-                <input id="balanceAll" name="balance" type="radio" class="custom-control-input" value="d. None of the above " required>
-                <label class="custom-control-label d-inline-flex" for="balanceAll">
-                    d. All of the above
+                <input  name="recommand" type="radio" value="b.No" class="custom-control-input" id="recommand-no">
+                <label class="custom-control-label d-inline-flex" for="recommand-no">
+                    b.No
                 </label>
+            </div>
+            <div class="custom-control custom-radio">
+                <input  name="recommand" type="radio" class="custom-control-input" value="c.May Be" required id="recommand-maybe">
+                <label class="custom-control-label d-inline-flex" for="recommand-maybe" >
+                    c.May Be
+                </label>
+            </div>
+        </div>
+        <div class="col-md-12 pb-3">
+            <label>11. How do you get to know about School's information collection centre?</label>
+            <div class="col-md-6">
+                <textarea id="information" name="information" type="text" class="form-control"></textarea>
+
+            </div>
+        </div>
+        <div class="col-md-12 pb-3">
+            <label>12. Would you drop some suggestion to grow us stronger?</label>
+            <div class="col-md-6">
+                <textarea id="suggestion" name="suggestion" type="text" class="form-control"></textarea>
+
             </div>
         </div>
 
-        <button type="button" class="btn btn-sucess" value="ok" id="submit" onclick="submitForm()">Submit Answer</button>
+        <button type="button" class="btn btn-sucess buttons" style="float: center" onclick="submitForm()">Submit Answer</button>
     </form>
 </div>
 
 <script>
-  // $('input[type="radio"]').click(function() {
-  //     var theNumber = $(this).attr('id').slice(-1);
-  //     $(this).siblings('label').each(function() {
-  //         var sibNumber = $(this).attr('for').slice(-1);
-  //         if (sibNumber <= theNumber) {
-  //             $(this).addClass('on');
-  //         } else {
-  //             $(this).removeClass('on');
-  //         }
-  //     });
-  // });
-  const correctAnswer = {
-    spiceNepal: 'b.2005 A.D',
-    callRate: 'a. 2.54Rs',
-    balanceTranasferTimes: 'b. 3',
-    postoaidUserLoan: 'b. False',
-    customerFreeCall: 'c. 30',
-    customerComplain: 'a. 9005',
-    pin: 'b. No',
-    recharge: 'a. Yes',
-    fourG : 'b. False',
-      nameRegister: 'c. *903#',
-    requirements: 'c. Original Document only',
-    balance: 'c. Dail 901 and follow the instruction',
-  };
   function submitForm() {
-    let allData = {};
     let questionAnswerData = {};
+    let finalData = {};
     const questionAnswer = $('#question-form').serializeArray();
-    let totalmarks = 0;
     console.log(questionAnswer);
-    if(questionAnswer.length < 11){
+    if(questionAnswer.length < 10){
       alert("please fill all data");
       return;
     }
     questionAnswer.forEach(data => {
       questionAnswerData[data.name] = data.value;
-      if(correctAnswer[data.name] === data.value) {
-        totalmarks += 5;
-      }
       if(data.value == null || data.value == '') {
         valid = false;
       }
     });
-    allData['totalPoint'] = totalmarks;
-    allData['ratingData'] = JSON.stringify(questionAnswerData);
+     finalData['ratingData'] =  JSON.stringify(questionAnswerData);
+
     $.ajax({
       url:"${pageContext.request.contextPath}/questionAnswer/save/"+ sessionStorage.getItem("userId"),
       type:"post",
       contentType:"application/json",
-      data: JSON.stringify(allData),
+      data: JSON.stringify(finalData),
       success:function(data){
         console.log(data);
         window.location.href = '${pageContext.request.contextPath}/home';

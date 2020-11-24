@@ -42,9 +42,6 @@
                     <th>Username</th>
                     <th>Email</th>
                     <th>Address</th>
-                    <th>Score</th>
-                    <th>Score %</th>
-                    <th>status</th>
                 </tr>
                 <c:forEach items="${users}" var="user" varStatus="loop">
 <tr style="cursor: pointer;" onclick="window.location.href= '/question-answer/${user.id}'">
@@ -52,9 +49,6 @@
         <td>${user.userName}</td>
         <td>${user.email}</td>
         <td>${user.address}</td>
-        <td>${user.questionAnswer.totalPoint}</td>
-        <td>${user.questionAnswer.totalPercentage}%</td>
-        <td>${user.questionAnswer.totalPercentage > 40 ? 'pass' : 'fail'}</td>
 
 </tr>  </c:forEach>
             </table>

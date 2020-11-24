@@ -20,7 +20,7 @@ public class User {
     private String userName;
 
     @NotNull
-    private String pasword;
+    private String password;
 
     @NotNull
     private String email;

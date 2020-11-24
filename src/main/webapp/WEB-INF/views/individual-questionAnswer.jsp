@@ -91,60 +91,60 @@
                                 <td>Qno.1</td>
                                 <td><p class="c-margin"> Did you find the correct choice with the help of this app?</p>
                                 </td>
-                                <td>${correctAnswers.spiceNepal}</td>
+                                <td>${correctAnswers.choice}</td>
                             </tr>
                             <tr>
                                 <td>Qno.2</td>
                                 <td><p class="c-margin"> On the scale of 1 to 5. Rate the variety of choices provided by
                                     the system.</p></td>
-                                <td>${correctAnswers.callRate}</td>
+                                <td>${correctAnswers.rate}</td>
                             </tr>
                             <tr>
                                 <td>Qno.3</td>
                                 <td><p class="c-margin">Rate the smoothness of school on the scale of 1 to 5</p></td>
-                                <td>${correctAnswers.balanceTranasferTimes}</td>
+                                <td>${correctAnswers.smoothness}</td>
                             </tr>
                             <tr>
                                 <td>Qno.4</td>
                                 <td><p class="c-margin"> Which of the following best describes the area of the school
                                     you preferred?</p></td>
-                                <td>${correctAnswers.postoaidUserLoan}</td>
+                                <td>${correctAnswers.area}</td>
                             </tr>
                             <tr>
                                 <td>Qno.5</td>
                                 <td><p class="c-margin">How strongly are you satisfied with the rating of school
                                     provided by the system (1-5)</p></td>
-                                <td>${correctAnswers.customerFreeCall}</td>
+                                <td>${correctAnswers.satified}</td>
                             </tr>
                             <tr>
                                 <td>Qno.6</td>
                                 <td><p class="c-margin">I would imagine that most people would learn to use this system
                                     very quickly</p></td>
-                                <td>${correctAnswers.customerComplain}</td>
+                                <td>${correctAnswers.learn}</td>
                             </tr>
                             <tr>
                                 <td>Qno.7</td>
                                 <td><p class="c-margin"> Was the system user friendly?</p></td>
-                                <td>${correctAnswers.pin}</td>
+                                <td>${correctAnswers.friendly}</td>
                             </tr>
                             <tr>
                                 <td>Qno.8</td>
                                 <td><p class="c-margin">
                                     The interface of the system was pleasant. scale (1-5)</p></td>
-                                <td>${correctAnswers.recharge}</td>
+                                <td>${correctAnswers['interface']}</td>
                             </tr>
                             <tr>
                                 <td>Qno.9</td>
                                 <td><p class="c-margin">How system relevant do you find the accuracy of School's
                                     Detail.</p></td>
-                                <td>${correctAnswers.fourG}</td>
+                                <td>${correctAnswers.accurate}</td>
                             </tr>
                             <tr>
                                 <td>Qno.10</td>
                                 <td><p class="c-margin">Would you recommend the School's Information Collection centre
                                     to other guardians?</p>
                                 </td>
-                                <td>${correctAnswers.nameRegister}</td>
+                                <td>${correctAnswers.recommand}</td>
                             </tr>
                         </table>
                     </div>
@@ -164,13 +164,13 @@
                                 </strong></td>
                             </tr>
                             <tr>
-                                <td>${user.questionAnswer.totalPoint/5}</td>
+                            <td>${correctAnswers.information}</td>
                             </tr>
                             <tr>
                                 <td><strong>12. Would you drop some suggestion to grow us stronger?</strong></td>
                             </tr>
                             <tr>
-                                <td><strong>${user.questionAnswer.totalPoint}</strong></td>
+                               <td>${correctAnswers.suggestion}</td>
                             </tr>
                         </table>
                     </div>

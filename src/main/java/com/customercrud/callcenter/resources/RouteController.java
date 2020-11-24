@@ -40,7 +40,7 @@ public class RouteController {
             modelMap.put("error" , "user not found");
             return "index";
         }
-        if(!user.getPasword().equals(password)){
+        if(null == user.getPassword() ||  !user.getPassword().equals(password)){
             modelMap.put("error" , "Incorrect Password!!");
             return "index";
         }

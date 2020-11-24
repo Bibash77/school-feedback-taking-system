@@ -24,8 +24,8 @@
 <header class="w3-container w3-red w3-center" style="padding:128px 16px">
     <h1 class="w3-margin w3-jumbo">WELCOME HOME</h1>
     <p class="w3-xlarge"></p>
-    <a class="w3-button w3-black w3-padding-large w3-large w3-margin-top"
-       href="${pageContext.request.contextPath}/questionAnswer" id="takeExam">Give Feedback</a>
+    <a id="takeFeedback" class="w3-button w3-black w3-padding-large w3-large w3-margin-top"
+       href="${pageContext.request.contextPath}/questionAnswer" >Give Feedback</a>
 </header>
 
 <!-- First Grid -->

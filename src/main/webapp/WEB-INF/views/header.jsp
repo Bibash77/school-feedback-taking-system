@@ -34,7 +34,7 @@
     </script>
     <style>
         .background {
-            background-image: linear-gradient(to bottom right, #DE6262, #fff);
+            background-image: linear-gradient(to bottom right, orangered, #fff);
         }
 
         .text-secondary {
@@ -95,11 +95,3 @@
     });
 </script>
 </html>
-
-<%--<div class="sidenav background">
-    <h6 class="ml-3">Pawan Home Stay</h6>
-    <a href="#about">Give FeedBack</a>
-    <a href="#clients">Ratings</a>
-    <a href="#services">Logout</a>
-    <a href="#contact">Contact</a>
-</div>--%>

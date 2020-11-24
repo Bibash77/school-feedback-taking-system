@@ -97,6 +97,7 @@
         } else if (userType == 'ADMIN') {
             document.getElementById("takeExam").hidden = true;
             document.getElementById("myexam").hidden = true;
+            document.getElementById("takeFeedback").hidden = true;
             console.log('user');
         }
     });

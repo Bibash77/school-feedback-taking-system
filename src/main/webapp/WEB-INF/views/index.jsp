@@ -5,304 +5,283 @@
 <html>
 <head>
     <title>Test</title>
-        <style>
-        .login-block {
-            background: #DE6262; /* fallback for old browsers */
-            background: -webkit-linear-gradient(to bottom, #FFB88C, #DE6262); /* Chrome 10-25, Safari 5.1-6 */
-            background: linear-gradient(to bottom, #FFB88C, #DE6262); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-            float: left;
+    <style>
+        body {
+            margin: 0;
+            color: #6a6f8c;
+            background: #c8c8c8;
+            font: 600 16px/18px 'Open Sans', sans-serif
+        }
+
+        .login-box {
             width: 100%;
-            padding: 50px 0;
-        }
-
-        .banner-sec {
-            background: url(https://static.pexels.com/photos/33972/pexels-photo.jpg) no-repeat left bottom;
-            background-size: cover;
-            min-height: 500px;
-            border-radius: 0 10px 10px 0;
-            padding: 0;
-        }
-
-        .container {
-            background: #fff;
-            border-radius: 10px;
-            box-shadow: 15px 20px 0px rgba(0, 0, 0, 0.1);
-        }
-
-        .carousel-inner {
-            border-radius: 0 10px 10px 0;
-        }
-
-        .carousel-caption {
-            text-align: left;
-            left: 5%;
-        }
-
-        .login-sec {
-            padding: 50px 30px;
+            margin: auto;
+            max-width: 525px;
+            min-height: 670px;
             position: relative;
+            background: url(https://images.unsplash.com/photo-1507208773393-40d9fc670acf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1268&q=80) no-repeat center;
+            box-shadow: 0 12px 15px 0 rgba(0, 0, 0, .24), 0 17px 50px 0 rgba(0, 0, 0, .19)
         }
 
-        .login-sec .copy-text {
+        .login-snip {
+            width: 100%;
+            height: 100%;
             position: absolute;
-            width: 80%;
-            bottom: 20px;
-            font-size: 13px;
-            text-align: center;
+            padding: 90px 70px 50px 70px;
+            background: rgba(0, 77, 77, .9)
         }
 
-        .login-sec .copy-text i {
-            color: #FEB58A;
-        }
-
-        .login-sec .copy-text a {
-            color: #E36262;
-        }
-
-        .login-sec h2 {
-            margin-bottom: 30px;
-            font-weight: 800;
-            font-size: 30px;
-            color: #DE6262;
-        }
-
-        .login-sec h2:after {
-            content: " ";
-            width: 100px;
-            height: 5px;
-            background: #FEB58A;
-            display: block;
-            margin-top: 20px;
-            border-radius: 3px;
-            margin-left: auto;
-            margin-right: auto
-        }
-
-        .btn-login {
-            background: #DE6262;
-            color: #fff;
-            font-weight: 600;
-        }
-
-        .banner-text {
-            width: 70%;
+        .login-snip .login,
+        .login-snip .sign-up-form {
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
             position: absolute;
-            bottom: 40px;
-            padding-left: 20px;
+            transform: rotateY(180deg);
+            backface-visibility: hidden;
+            transition: all .4s linear
         }
 
-        .banner-text h2 {
+        .login-snip .sign-in,
+        .login-snip .sign-up,
+        .login-space .group .check {
+            display: none
+        }
+
+        .login-snip .tab,
+        .login-space .group .label,
+        .login-space .group .button {
+            text-transform: uppercase;
+            cursor: pointer;
+        }
+
+        .login-snip .tab {
+            font-size: 22px;
+            margin-right: 15px;
+            padding-bottom: 5px;
+            margin: 0 15px 10px 0;
+            display: inline-block;
+            border-bottom: 2px solid transparent
+        }
+
+        .login-snip .sign-in:checked + .tab,
+        .login-snip .sign-up:checked + .tab {
             color: #fff;
-            font-weight: 600;
+            border-color: #1161ee
         }
 
-        .banner-text h2:after {
-            content: " ";
-            width: 100px;
-            height: 5px;
-            background: #FFF;
-            display: block;
-            margin-top: 20px;
-            border-radius: 3px;
+        .login-space {
+            min-height: 345px;
+            position: relative;
+            perspective: 1000px;
+            transform-style: preserve-3d
         }
 
-        .banner-text p {
+        .login-space .group {
+            margin-bottom: 15px
+        }
+
+        .login-space .group .label,
+        .login-space .group .input,
+        .login-space .group .button {
+            width: 100%;
             color: #fff;
+            display: block
+        }
+
+        .login-space .group .input,
+        .login-space .group .button {
+            border: none;
+            padding: 15px 20px;
+            border-radius: 25px;
+            background: rgba(255, 255, 255, .1)
+        }
+
+        .login-space .group input[data-type="password"] {
+            text-security: circle;
+            -webkit-text-security: circle
+        }
+
+        .login-space .group .label {
+            color: #aaa;
+            font-size: 12px
+        }
+
+        .login-space .group .button {
+            background-image: linear-gradient(to bottom right, orangered, #fff);
+        }
+
+        .login-space .group label .icon {
+            width: 15px;
+            height: 15px;
+            border-radius: 2px;
+            position: relative;
+            display: inline-block;
+            background: rgba(255, 255, 255, .1)
+        }
+
+        .login-space .group label .icon:before,
+        .login-space .group label .icon:after {
+            content: '';
+            width: 10px;
+            height: 2px;
+            background: #fff;
+            position: absolute;
+            transition: all .2s ease-in-out 0s
+        }
+
+        .login-space .group label .icon:before {
+            left: 3px;
+            width: 5px;
+            bottom: 6px;
+            transform: scale(0) rotate(0)
+        }
+
+        .login-space .group label .icon:after {
+            top: 6px;
+            right: 0;
+            transform: scale(0) rotate(0)
+        }
+
+        .login-space .group .check:checked + label {
+            color: #fff
+        }
+
+        .login-space .group .check:checked + label .icon {
+            background-image: linear-gradient(to bottom right, orangered, #fff);
+        }
+
+        .login-space .group .check:checked + label .icon:before {
+            transform: scale(1) rotate(45deg)
+        }
+
+        .login-space .group .check:checked + label .icon:after {
+            transform: scale(1) rotate(-45deg)
+        }
+
+        .login-snip .sign-in:checked + .tab + .sign-up + .tab + .login-space .login {
+            transform: rotate(0)
+        }
+
+        .login-snip .sign-up:checked + .tab + .login-space .sign-up-form {
+            transform: rotate(0)
+        }
+
+        *,
+        :after,
+        :before {
+            box-sizing: border-box
+        }
+
+        .clearfix:after,
+        .clearfix:before {
+            content: '';
+            display: table
+        }
+
+        .clearfix:after {
+            clear: both;
+            display: block
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none
+        }
+
+        .hr {
+            height: 2px;
+            margin: 60px 0 50px 0;
+            background: rgba(255, 255, 255, .2)
+        }
+
+        .foot {
+            text-align: center
+        }
+
+        .card {
+            width: 500px;
+            left: 100px
+        }
+
+        ::placeholder {
+            color: #b3b3b3
         }
     </style>
 </head>
 <body class="background">
-<%--<div class="container">
-    <div class="row">
-        <div class="col-md-12 min-vh-100 d-flex flex-column justify-content-center">
-            <div class="row">
-                <div class="col-lg-6 col-md-8 mx-auto">
-
-                    <!-- form card login -->
-                    <div class="card rounded shadow shadow-sm">
-                        <div class="card-header">
-                            <h3 class="mb-0">Login</h3>
-                        </div>
-                        <div class="card-body">
-                            <form class="form" autocomplete="off" id="formLogin" action="<c:url value="/login" />"
-                                  method="POST">
-                                <div class="form-group">
-                                    <label for="uname1">Username</label>
-                                    <input type="text" class="form-control form-control-lg rounded-0" name="username"
-                                           id="uname1" required="">
+<div class="row">
+    <div class="col-md-6 mx-auto p-0">
+        <div class="card" style="    margin-left: 100px; margin-top: 50px">
+            <div class="login-box">
+                <div class="login-snip"><input id="tab-1" type="radio" name="tab" class="sign-in" checked><label
+                        for="tab-1" class="tab">Login</label> <input id="tab-2" type="radio" name="tab" class="sign-up"><label
+                        for="tab-2" class="tab">Sign Up</label>
+                    <div class="login-space">
+                        <form class="form" autocomplete="off" id="formLogin" action="<c:url value="/login" />"
+                              method="POST">
+                            <div class="login">
+                                <div class="group"><label for="user" class="label">Username</label> <input id="user"
+                                                                                                           type="text"
+                                                                                                           class="input"
+                                                                                                           name="username"
+                                                                                                           placeholder="Enter your username">
                                 </div>
-                                <div class="form-group">
-                                    <label for="pwd1">Password</label>
-                                    <input type="password" class="form-control form-control-lg rounded-0" id="pwd1"
-                                           name="password">
+                                <div class="group"><label for="pass" class="label">Password</label> <input id="pass"
+                                                                                                           type="password"
+                                                                                                           class="input"
+                                                                                                           name="password"
+                                                                                                           data-type="password"
+                                                                                                           placeholder="Enter your password">
                                 </div>
-                                <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#registerModal">
-                                    Register
-                                </a>
-                                <button type="submit" class="btn btn-success float-right" id="btnLogin">Login</button>
-                            </form>
-                        </div>
-                        <!--/card-block-->
-                    </div>
-                    <!-- /form card login -->
-
-                </div>
-
-
-            </div>
-            <!--/row-->
-
-        </div>
-        <!--/col-->
-    </div>
-    <!--/row-->
-</div>--%>
-<section class="login-block" style="height: 100%;">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4 login-sec">
-                <h2 class="text-center">Login Now</h2>
-                <form class="form" autocomplete="off" id="formLogin" action="<c:url value="/login" />"
-                      method="POST">
-                    <div class="form-group">
-                        <label for="username" class="text-uppercase">Username</label>
-                        <input type="text" id="username" class="form-control" placeholder="username" name="username">
-
-                    </div>
-                    <div class="form-group">
-                        <label for="password" class="text-uppercase">Password</label>
-                        <input type="password" id="password" name="password" class="form-control"
-                               placeholder="password">
-                    </div>
-
-
-                    <div class="form-check">
-                        <button type="submit" class="btn btn-login float-right">Submit</button>
-                    </div>
-
-                </form>
-                <div class="copy-text">
-                    <p class="text-danger">${error}</p>
-                    <button  class="btn secondary" data-toggle="modal" data-target="#registerModal">
-                        Register
-                    </button>
-                </div>
-            </div>
-            <div class="col-md-8 banner-sec">
-                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                    </ol>
-                    <div class="carousel-inner" role="listbox">
-                        <div class="carousel-item active">
-                            <img class="d-block img-fluid" src="https://static.pexels.com/photos/33972/pexels-photo.jpg"
-                                 alt="First slide">
-                            <div class="carousel-caption d-none d-md-block">
-                                <div class="banner-text">
-                                    <h2>Welcome to Mother Treesta School</h2>
-                                    <p>Mother Trisha School is a multicultural community in the foothills of the
-                                        Himalayas
-                                        that inspires in each student a passion for learning, the confidence and
-                                        competence to pursue their dreams, and the commitment to serve as a
-                                        compassionate global citizen and leader, who is a steward of the
-                                        environment.</p>
-                                </div>
+                                <div class="group"><input type="submit" class="button" value="Sign In"></div>
+                                <div class="hr"></div>
                             </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block img-fluid"
-                                 src="https://images.pexels.com/photos/7097/people-coffee-tea-meeting.jpg"
-                                 alt="First slide">
-                            <div class="carousel-caption d-none d-md-block">
-                                <div class="banner-text">
-                                    <h2>Our Schools</h2>
-                                    <p>Mother Trisha School offers an American curriculum with an international
-                                        perspective.
-                                        The program is college preparatory with a wide selection of electives and
-                                        extracurricular activities leading to an American high school diploma.</p>
+                        </form>
+                        <form name="registerForm" id="registerForm">
+                            <div class="sign-up-form">
+                                <div class="group"><label for="user" class="label">Username</label> <input id="user"
+                                                                                                           type="text"
+                                                                                                           name="userName"
+                                                                                                           class="input"
+                                                                                                           placeholder="Create your Username">
                                 </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block img-fluid"
-                                 src="https://images.pexels.com/photos/872957/pexels-photo-872957.jpeg"
-                                 alt="First slide">
-                            <div class="carousel-caption d-none d-md-block">
-                                <div class="banner-text">
-                                    <h2>Core Values</h2>
-                                    <ul>
-                                        <li>Learning</li>
-                                        <li>Compassion</li>
-                                        <li>Respect</li>
-                                        <li>Integrity</li>
-                                        <li>Collaboration</li>
-                                        <li>Responsibility</li>
-                                    </ul>
+                                <div class="group"><label for="pass" class="label">Password</label> <input id="pass"
+                                                                                                           type="password"
+                                                                                                           name="password"
+                                                                                                           class="input"
+                                                                                                           data-type="password"
+                                                                                                           placeholder="Create your password">
                                 </div>
-                            </div>
-                        </div>
-                    </div>
+                                <div class="group"><label for="pass" class="label">Email Address</label> <input
+                                        id="pass"
+                                        type="text"
+                                        name="email"
+                                        class="input"
+                                        placeholder="Enter your email address">
+                                </div>
 
+                                <div class="group"><label for="pass" class="label">Address</label> <input id="address"
+                                                                                                          type="text"
+                                                                                                          name="address"
+                                                                                                          class="input"
+                                                                                                          placeholder="Enter your address">
+                                </div>
+                                <div class="group"><label for="pass" class="label">Contact no</label> <input
+                                        id="phoneNumber"
+                                        type="text"
+                                        name="phoneNumber"
+                                        class="input"
+                                        placeholder="Enter your phone no">
+                                </div>
+                                <div class="group"><input class="button" value="Sign Up" style="text-align: center;"
+                                                          onclick="registerUser()"></div>
+                                <div class="hr"></div>
+                            </div>
+                        </form>
+                    </div>
                 </div>
-            </div>
-        </div>
-</section>
-<!--/container-->
-
-<%--register modal--%>
-<!-- Modal -->
-<div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="registerModalLabel"
-     aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-            <div class="modal-header background">
-                <h5 class="modal-title" id="registerModalLabel">Register</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <form name="registerForm" id="registerForm">
-                    <div class="form-group">
-                        <label for="fullName" class="col-form-label">Full Name:</label>
-                        <input type="text" name="fullName" class="form-control" id="fullName">
-                    </div>
-                    <div class="form-group">
-                        <label for="username" class="col-form-label">Username:</label>
-                        <input type="text" name="userName" class="form-control" id="username">
-                    </div>
-                    <div class="form-group">
-                        <label for="email" class="col-form-label">Email:</label>
-                        <input type="email" class="form-control" id="email" name="email">
-                    </div>
-                    <div class="form-group">
-                        <label for="password" class="col-form-label">Password:</label>
-                        <input type="password" class="form-control" id="password" name="pasword">
-                    </div>
-                    <div class="form-group">
-                        <label for="phoneNumber" class="col-form-label">Phone Number:</label>
-                        <input type="number" name="phoneNumber" class="form-control" id="phoneNumber">
-                    </div>
-                    <div class="form-group">
-                        <label for="address" class="col-form-label">Address:</label>
-                        <input type="text" name="address" class="form-control" id="address">
-                    </div>
-                    <div class="form-group">
-                        <label for="gender" class="col-form-label">Gender:</label>
-                        <select class="form-control" name="gender" id="gender">
-                            <option selected hidden>Select Gender</option>
-                            <option>Male</option>
-                            <option>Female</option>
-                            <option>Other</option>
-                        </select>
-                    </div>
-                </form>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-                <button type="button" class="btn background" onclick="registerUser()">Register</button>
             </div>
         </div>
     </div>
@@ -332,9 +311,13 @@
             success: function (data) {
                 alert(data);
                 console.log(data);
+                window.location.href = "/index";
             },
+            error: function(data) {
+                alert(data);
+            }
 
-        });
+            });
     }
 </script>
 </html>

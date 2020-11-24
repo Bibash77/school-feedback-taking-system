@@ -5,47 +5,38 @@
 <head>
     <title>Feedback</title>
     <style>
-        .styled-table {
+        #customers {
+            font-family: Arial, Helvetica, sans-serif;
             border-collapse: collapse;
-            margin: 25px 0;
-            font-size: 0.9em;
-            font-family: sans-serif;
-            min-width:  1050px;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+            width: 100%;
         }
-        .styled-table thead tr {
-            background-color: #009879;
-            color: #ffffff;
+
+        #customers td, #customers th {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+
+        #customers tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        #customers tr:hover {
+            background-color: #ddd;
+        }
+
+        #customers th {
+            padding-top: 12px;
+            padding-bottom: 12px;
             text-align: left;
-        }
-        .styled-table th,
-        .styled-table td {
-            padding: 12px 15px;
-        }
-        .styled-table tbody tr.active-row {
-            font-weight: bold;
-            color: #009879;
-        }
-        .styled-table tbody tr {
-            border-bottom: 1px solid #dddddd;
-        }
-
-        .styled-table tbody tr:nth-of-type(even) {
-            background-color: #f3f3f3;
-        }
-
-        .styled-table tbody tr:last-of-type {
-            border-bottom: 2px solid #009879;
-        }
-
-        .c-margin {
-            margin-top: 10px;
+            background-color: dodgerblue;
+            color: white;
         }
     </style>
 </head>
 <body class="background">
 <input value="${user.id}" id="userId" hidden>
-<div class="container" id="all" style="margin-top: 100px;">
+<div id="all" style="margin-top: 100px;width: 1500px;
+    margin-left: 100px;">
     <div class="row">
         <div class="col-md-12">
             <div class="card shadow-lg p-3">
@@ -53,15 +44,14 @@
                     <h6 class="text-center">User Detail</h6>
                 </div>
                 <div class="card-body">
-                    <table class="styled-table">
+                    <table class="styled-table" id="customers">
                         <thead>
-                        <tr></tr>
+                        <tr>
+                            <th colspan="2"></th>
+
+                        </tr>
                         </thead>
                         <tbody>
-                        <tr>
-                            <td><strong>Full Name</strong></td>
-                            <td>${user.fullName}</td>
-                        </tr>
                         <tr>
                             <td><strong>User Name</strong></td>
                             <td>${user.userName}</td>
@@ -75,237 +65,119 @@
                             <td>${user.phoneNumber}</td>
                         </tr>
                         <tr>
-                            <td><strong>Gender</strong></td>
-                            <td>${user.gender}</td>
+                            <td><strong>Address</strong></td>
+                            <td>${user.address}</td>
                         </tr>
                         </tbody>
                     </table>
                 </div>
-                <c:if test="${user.questionAnswer ne null}">
-                <div class="card-footer">
-                    <strong>Overall Status</strong>
-                    <span class="float-right">${user.questionAnswer.totalPercentage > 40 ? 'pass' : 'fail'}</span>
-                </div>
-                </c:if>
             </div>
         </div>
-<c:if test="${user.questionAnswer ne null}">
-        <div class="col-md-12" style="margin-top: 100px;">
-            <div class="card shadow  p-3">
-                <div class="card-title">
-                    <h6 class="text-center">User Answers</h6>
-                </div>
-                <div class="body">
-
-                    <table class="styled-table">
-                        <tr>
-                            <td>#</td>
-                            <td>Question</td>
-                            <td>Given Answer</td>
-                            <td>Correct Answer</td>
-                            <td>Status</td>
-                        </tr>
-                        <tr>
-                            <td>Qno.1</td>
-                            <td><p class="c-margin">When was Spice Nepal was rebranded as Mero Mobile?</p></td>
-                            <td>${correctAnswers.spiceNepal}</td>
-                            <td>C) 2005 A.D</td>
-                            <td>
-                             <c:if test="${correctAnswers.spiceNepal eq 'a.2004 A.D'}">
-                                 <i class="fa fa-check-circle" aria-hidden="true"></i>
-                             </c:if>
-                                <c:if test="${correctAnswers.spiceNepal ne 'a.2004 A.D'}">
-                                    <i class="fa fa-close" aria-hidden="true"></i>
-                             </c:if>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Qno.2</td>
-                            <td><p class="c-margin">What is the call rate per min?</p></td>
-                            <td>${correctAnswers.callRate}</td>
-                            <td> A) 2.54Rs</td>
-                            <td>
-                                <c:if test="${correctAnswers.callRate eq 'a. 2.54Rs'}">
-                                    <i class="fa fa-check-circle" aria-hidden="true"></i>
-                                </c:if>
-                                <c:if test="${correctAnswers.callRate ne 'a. 2.54Rs'}">
-                                    <i class="fa fa-close" aria-hidden="true"></i>
-                                </c:if>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Qno.3</td>
-                            <td><p class="c-margin">How many time you can transfer the balance?</p></td>
-                            <td>${correctAnswers.balanceTranasferTimes}</td>
-                            <td> B) 3</td>
-                            <td>
-                                <c:if test="${correctAnswers.balanceTranasferTimes eq 'b. 3'}">
-                                    <i class="fa fa-check-circle" aria-hidden="true"></i>
-                                </c:if>
-                                <c:if test="${correctAnswers.balanceTranasferTimes ne 'b. 3'}">
-                                    <i class="fa fa-close" aria-hidden="true"></i>
-                                </c:if>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Qno.4</td>
-                            <td><p class="c-margin">Postpaid user can take the loan.</p></td>
-                            <td>${correctAnswers.postoaidUserLoan}</td>
-                            <td>B) False</td>
-                            <td>
-                                <c:if test="${correctAnswers.postoaidUserLoan eq 'b. False'}">
-                                    <i class="fa fa-check-circle" aria-hidden="true"></i>
-                                </c:if>
-                                <c:if test="${correctAnswers.postoaidUserLoan ne 'b. False'}">
-                                    <i class="fa fa-close" aria-hidden="true"></i>
-                                </c:if>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Qno.5</td>
-                            <td><p class="c-margin">How many time customer can freely call 9005?</p></td>
-                            <td>${correctAnswers.customerFreeCall}</td>
-                            <td> C) 30</td>
-                           <td>
-                               <c:if test="${correctAnswers.customerFreeCall eq 'c. 30'}">
-                                   <i class="fa fa-check-circle" aria-hidden="true"></i>
-                               </c:if>
-                               <c:if test="${correctAnswers.customerFreeCall ne 'c. 30'}">
-                                   <i class="fa fa-close" aria-hidden="true"></i>
-                               </c:if>
-                           </td>
-                        </tr>
-                        <tr>
-                            <td>Qno.6</td>
-                            <td><p class="c-margin">Where customer can complain their problem?</p></td>
-                            <td>${correctAnswers.customerComplain}</td>
-                            <td> A) 9005</td>
-                            <td>
-                                <c:if test="${correctAnswers.customerComplain eq 'a. 9005'}">
-                                    <i class="fa fa-check-circle" aria-hidden="true"></i>
-                                </c:if>
-                                <c:if test="${correctAnswers.customerComplain ne 'a. 9005'}">
-                                    <i class="fa fa-close" aria-hidden="true"></i>
-                                </c:if>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Qno.7</td>
-                            <td><p class="c-margin">Do you need Pin no to transfer the balance?</p></td>
-                            <td>${correctAnswers.pin}</td>
-                            <td> B) No</td>
-                            <td>
-                                <c:if test="${correctAnswers.pin eq 'b. No'}">
-                                    <i class="fa fa-check-circle" aria-hidden="true"></i>
-                                </c:if>
-                                <c:if test="${correctAnswers.pin ne 'b. No'}">
-                                    <i class="fa fa-close" aria-hidden="true"></i>
-                                </c:if>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Qno.8</td>
-                            <td><p class="c-margin">
-                                Can I recharge with serial.no after the recharge pin being damaged?</p></td>
-                            <td>${correctAnswers.recharge}</td>
-                            <td>A) Yes</td>
-                            <td>
-                                <c:if test="${correctAnswers.recharge eq 'a. Yes'}">
-                                    <i class="fa fa-check-circle" aria-hidden="true"></i>
-                                </c:if>
-                                <c:if test="${correctAnswers.recharge ne 'a. Yes'}">
-                                    <i class="fa fa-close" aria-hidden="true"></i>
-                                </c:if>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Qno.9</td>
-                            <td><p class="c-margin">4g is available in urban areas only?</p></td>
-                            <td>${correctAnswers.fourG}</td>
-                            <td>B) False</td>
-                            <td>
-                                <c:if test="${correctAnswers.fourG eq 'b. False'}">
-                                    <i class="fa fa-check-circle" aria-hidden="true"></i>
-                                </c:if>
-                                <c:if test="${correctAnswers.fourG ne 'b. False'}">
-                                    <i class="fa fa-close" aria-hidden="true"></i>
-                                </c:if>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Qno.10</td>
-                            <td><p class="c-margin">How can you check if your name has been registered or not?</p></td>
-                            <td>${correctAnswers.nameRegister}</td>
-                            <td>C)*903#</td>
-                            <td>
-                                <c:if test="${correctAnswers.nameRegister eq 'c. *903#'}">
-                                    <i class="fa fa-check-circle" aria-hidden="true"></i>
-                                </c:if>
-                                <c:if test="${correctAnswers.nameRegister ne 'c. *903#'}">
-                                    <i class="fa fa-close" aria-hidden="true"></i>
-                                </c:if>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Qno.11</td>
-                            <td><p class="c-margin">What are the requirements to upgrade sim to 4g?</p></td>
-                            <td>${correctAnswers.requirements}</td>
-                            <td> C) Original Document only</td>
-                            <td>
-                                <c:if test="${correctAnswers.requirements eq 'c. Original Document only'}">
-                                    <i class="fa fa-check-circle" aria-hidden="true"></i>
-                                </c:if>
-                                <c:if test="${correctAnswers.requirements ne 'c. Original Document only'}">
-                                    <i class="fa fa-close" aria-hidden="true"></i>
-                                </c:if>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Qno.12</td>
-                            <td><p class="c-margin">How can you check your balance?</p></td>
-                            <td>${correctAnswers.balance}</td>
-                            <td> D) All of the above</td>
-                            <td>
-                                <c:if test="${correctAnswers.balance eq 'd. None of the above '}">
-                                    <i class="fa fa-check-circle" aria-hidden="true"></i>
-                                </c:if>
-                                <c:if test="${correctAnswers.balance ne 'd. None of the above '}">
-                                    <i class="fa fa-close" aria-hidden="true"></i>
-                                </c:if>
-                            </td>
-                        </tr>
-                    </table>
-                </div>
-            </div>
-        </div>
-</c:if>
-    </div>
         <c:if test="${user.questionAnswer ne null}">
-    <div class="col-md-12" style="margin-top: 100px;">
-        <div class="card shadow  p-3">
-            <div class="card-title">
-                <h6 class="text-center">Summary</h6>
-            </div>
-            <div class="body">
-                <table class="styled-table table text-center">
-                    <tr>
-                        <td><strong>Total Correct Answer</strong></td>
-                        <td>${user.questionAnswer.totalPoint/5}</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Obtained Marks</strong></td>
-                        <td><strong>${user.questionAnswer.totalPoint}</strong></td>
-                    </tr>
-                    <tr>
-                        <td><strong>Percentage</strong></td>
-                        <td><strong>${user.questionAnswer.totalPercentage}%</strong></td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-    </div>
-        </c:if>
+            <div class="col-md-12" style="margin-top: 100px;">
+                <div class="card shadow  p-3">
+                    <div class="card-title">
+                        <h6 class="text-center">User Answers</h6>
+                    </div>
+                    <div class="body">
 
+                        <table class="styled-table" id="customers">
+                            <tr>
+                                <th>#</th>
+                                <th>Question</th>
+                                <th>Given Answer</th>
+                            </tr>
+                            <tr>
+                                <td>Qno.1</td>
+                                <td><p class="c-margin"> Did you find the correct choice with the help of this app?</p>
+                                </td>
+                                <td>${correctAnswers.choice}</td>
+                            </tr>
+                            <tr>
+                                <td>Qno.2</td>
+                                <td><p class="c-margin"> On the scale of 1 to 5. Rate the variety of choices provided by
+                                    the system.</p></td>
+                                <td>${correctAnswers.rate}</td>
+                            </tr>
+                            <tr>
+                                <td>Qno.3</td>
+                                <td><p class="c-margin">Rate the smoothness of school on the scale of 1 to 5</p></td>
+                                <td>${correctAnswers.smoothness}</td>
+                            </tr>
+                            <tr>
+                                <td>Qno.4</td>
+                                <td><p class="c-margin"> Which of the following best describes the area of the school
+                                    you preferred?</p></td>
+                                <td>${correctAnswers.area}</td>
+                            </tr>
+                            <tr>
+                                <td>Qno.5</td>
+                                <td><p class="c-margin">How strongly are you satisfied with the rating of school
+                                    provided by the system (1-5)</p></td>
+                                <td>${correctAnswers.satified}</td>
+                            </tr>
+                            <tr>
+                                <td>Qno.6</td>
+                                <td><p class="c-margin">I would imagine that most people would learn to use this system
+                                    very quickly</p></td>
+                                <td>${correctAnswers.learn}</td>
+                            </tr>
+                            <tr>
+                                <td>Qno.7</td>
+                                <td><p class="c-margin"> Was the system user friendly?</p></td>
+                                <td>${correctAnswers.friendly}</td>
+                            </tr>
+                            <tr>
+                                <td>Qno.8</td>
+                                <td><p class="c-margin">
+                                    The interface of the system was pleasant. scale (1-5)</p></td>
+                                <td>${correctAnswers['interface']}</td>
+                            </tr>
+                            <tr>
+                                <td>Qno.9</td>
+                                <td><p class="c-margin">How system relevant do you find the accuracy of School's
+                                    Detail.</p></td>
+                                <td>${correctAnswers.accurate}</td>
+                            </tr>
+                            <tr>
+                                <td>Qno.10</td>
+                                <td><p class="c-margin">Would you recommend the School's Information Collection centre
+                                    to other guardians?</p>
+                                </td>
+                                <td>${correctAnswers.recommand}</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </c:if>
+        <c:if test="${user.questionAnswer ne null}">
+            <div class="col-md-12" style="margin-top: 100px;">
+                <div class="card shadow  p-3">
+                    <div class="card-title">
+                        <h6 class="text-center">Comments </h6>
+                    </div>
+                    <div class="body">
+                        <table class="styled-table table text-center">
+                            <tr>
+                                <td><strong>11. How do you get to know about School's information collection centre?
+                                </strong></td>
+                            </tr>
+                            <tr>
+                            <td>${correctAnswers.information}</td>
+                            </tr>
+                            <tr>
+                                <td><strong>12. Would you drop some suggestion to grow us stronger?</strong></td>
+                            </tr>
+                            <tr>
+                               <td>${correctAnswers.suggestion}</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </c:if>
+    </div>
 </div>
 </body>
 <script>

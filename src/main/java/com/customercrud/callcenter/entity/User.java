@@ -17,22 +17,19 @@ public class User {
     private Integer id;
 
     @NotNull
-    private String fullName;
-
-    @NotNull
     private String userName;
 
     @NotNull
-    private String pasword;
-
-    @NotNull
-    private String gender;
+    private String password;
 
     @NotNull
     private String email;
 
     @NotNull
     private String phoneNumber;
+
+    @NotNull
+    private String address;
 
     @NotNull
     private UserType userType;

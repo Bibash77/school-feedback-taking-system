@@ -22,7 +22,7 @@
 <body class="w3-black">
 
 <header class="w3-container w3-blue w3-center" style="padding:128px 16px">
-    <h1 class="w3-margin w3-jumbo">WELCOME HOME</h1>
+    <h1 class="w3-margin w3-jumbo" id="wel-text">WELCOME HOME</h1>
     <p class="w3-xlarge"></p>
     <a id="takeFeedback" class="w3-button w3-black w3-padding-large w3-large w3-margin-top"
        href="${pageContext.request.contextPath}/questionAnswer" >Give Feedback</a>
@@ -88,5 +88,11 @@
 </div>
 </body>
 </html>
+<script>
+    $(document).ready(function () {
+        const username = sessionStorage.getItem('username');
+        document.getElementById("wel-text").innerText = "WELCOME HOME "+ username.toUpperCase();
+    });
+</script>
 
 <jsp:include page="footer.jsp"/>

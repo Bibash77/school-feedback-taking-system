@@ -36,12 +36,8 @@
             <div class="modal-body">
                 <form name="registerForm" id="registerForm">
                     <div class="form-group">
-                        <label for="fullName" class="col-form-label">Full Name:</label>
-                        <input type="text" name="fullName" class="form-control" id="fullName">
-                    </div>
-                    <div class="form-group">
                         <label for="username" class="col-form-label">Username:</label>
-                        <input type="text" name="userName" class="form-control" id="username">
+                        <input type="text" name="userName" class="form-control" id="username" placeholder="Enter  username">
                     </div>
                     <div class="form-group">
                         <label for="userType" class="col-form-label">User Type:</label>
@@ -53,28 +49,19 @@
                     </div>
                     <div class="form-group">
                         <label for="email" class="col-form-label">Email:</label>
-                        <input type="email" class="form-control" id="email" name="email">
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Enter email">
                     </div>
                     <div class="form-group">
                         <label for="password" class="col-form-label">Password:</label>
-                        <input type="password" class="form-control" id="password" name="pasword">
+                        <input type="password" class="form-control" id="password" name="pasword" placeholder="Enter password">
                     </div>
                     <div class="form-group">
                         <label for="phoneNumber" class="col-form-label">Phone Number:</label>
-                        <input type="number" name="phoneNumber" class="form-control" id="phoneNumber">
+                        <input type="number" name="phoneNumber" class="form-control" id="phoneNumber" placeholder="Enter phone number">
                     </div>
                     <div class="form-group">
                         <label for="address" class="col-form-label">Address:</label>
-                        <input type="text" name="address" class="form-control" id="address">
-                    </div>
-                    <div class="form-group">
-                        <label for="gender" class="col-form-label">Gender:</label>
-                        <select class="form-control" name="gender" id="gender">
-                            <option selected hidden>Select Gender</option>
-                            <option>Male</option>
-                            <option>Female</option>
-                            <option>Other</option>
-                        </select>
+                        <input type="text" name="address" class="form-control" id="address" placeholder="Enter address">
                     </div>
                 </form>
             </div>

@@ -42,13 +42,17 @@
                     <th>Username</th>
                     <th>Email</th>
                     <th>Address</th>
+                    <th>Feedback Status</th>
                 </tr>
                 <c:forEach items="${users}" var="user" varStatus="loop">
-<tr style="cursor: pointer;" onclick="window.location.href= '/question-answer/${user.id}'">
+<tr style="cursor: pointer;"
+    onclick="loadUrl('/question-answer/${user.id}' , ${user.questionAnswer ne null})"
+    <%--onclick="window.location.href= '/question-answer/${user.id}'"--%> >
         <td>${loop.count}</td>
         <td>${user.userName}</td>
         <td>${user.email}</td>
         <td>${user.address}</td>
+        <td>${user.questionAnswer eq null ? 'Not Given' : 'Given'}</td>
 
 </tr>  </c:forEach>
             </table>
@@ -69,6 +73,14 @@
             }
         });
     });
+
+    function loadUrl(url , status){
+        if(status){
+            window.location.href = url;
+        } else {
+            alert("User hasnt provided any feedbacks")
+        }
+    }
 </script>
 </html>
 <jsp:include page="footer.jsp"/>

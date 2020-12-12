@@ -79,6 +79,11 @@ public class RouteController {
         return "summary";
     }
 
+    @GetMapping("/enrolled-data")
+    public String loadData(){
+        return "load-data";
+    }
+
     @GetMapping("/logout")
     public String logout(HttpServletResponse response) {
         // clear cookie data

@@ -8,15 +8,10 @@
     Map<Object,Object> map = null;
     List<Map<Object,Object>> list = new ArrayList<Map<Object,Object>>();
 
-    map = new HashMap<Object,Object>(); map.put("label", "user1"); map.put("y", 81000); list.add(map);
-    map = new HashMap<Object,Object>(); map.put("label", "user2"); map.put("y", 47000); list.add(map);
-    map = new HashMap<Object,Object>(); map.put("label", "user3"); map.put("y", 32500); list.add(map);
-    map = new HashMap<Object,Object>(); map.put("label", "user4"); map.put("y", 19300); list.add(map);
-    map = new HashMap<Object,Object>(); map.put("label", "user5"); map.put("y", 19000); list.add(map);
-    map = new HashMap<Object,Object>(); map.put("label", "user6"); map.put("y", 9800); list.add(map);
-    map = new HashMap<Object,Object>(); map.put("label", "user7"); map.put("y", 5500); list.add(map);
-    map = new HashMap<Object,Object>(); map.put("label", "user8"); map.put("y", 5300); list.add(map);
-    map = new HashMap<Object,Object>(); map.put("label", "user9"); map.put("y", 15060); list.add(map);
+    map = new HashMap<Object,Object>(); map.put("label", "not bad"); map.put("y", 1); list.add(map);
+    map = new HashMap<Object,Object>(); map.put("label", "bad"); map.put("y", 2); list.add(map);
+    map = new HashMap<Object,Object>(); map.put("label", "excellent"); map.put("y", 3); list.add(map);
+    map = new HashMap<Object,Object>(); map.put("label", "good"); map.put("y", 2); list.add(map);
 
     String dataPoints = gsonObj.toJson(list);
 %>

@@ -91,7 +91,7 @@
                        document.getElementById("sunset").innerText = new Date(data.sys.sunset);
                        document.getElementById("temp").innerText = data.main.temp + '° celsius';
                        document.getElementById("visibility").innerText = data.visibility + ' kilometre';
-                       document.getElementById("feels_like").innerText = data.feels_like;
+                       document.getElementById("feels_like").innerText = data.main.feels_like + '° celsius';
                        document.getElementById("description").innerText = data.weather.description + ' kilometre';
                 }
             },

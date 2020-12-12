@@ -92,7 +92,7 @@
                        document.getElementById("temp").innerText = data.main.temp + '° celsius';
                        document.getElementById("visibility").innerText = data.visibility + ' kilometre';
                        document.getElementById("feels_like").innerText = data.main.feels_like + '° celsius';
-                       document.getElementById("description").innerText = data.weather.description + ' kilometre';
+                       document.getElementById("description").innerText = data.weather[0].description;
                 }
             },
 

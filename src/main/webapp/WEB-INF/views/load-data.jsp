@@ -79,19 +79,20 @@
             type: "GET",
             success: function (data) {
                 console.log(data);
-
                 if (data == null) {
                     alert("no data found !!");
 
                 } else {
-                    document.getElementById("name").innerText = data.name;
-                    document.getElementById("country").innerText = data.sys.country;
-                    document.getElementById("sunrise").innerText = new Date(data.sys.sunrise);
-                    document.getElementById("sunset").innerText = new Date(data.sys.sunset);
-                    document.getElementById("temp").innerText = data.main.temp + '° celsius';
-                    document.getElementById("visibility").innerText = data.visibility + ' kilometre';
-                    document.getElementById("feels_like").innerText = data.feels_like;
-                    document.getElementById("description").innerText = data.weather.description + ' kilometre';
+                    console.log("fsdg");
+                    console.log(data);
+                       document.getElementById("name").innerText = data.name;
+                       document.getElementById("country").innerText = data.sys.country;
+                       document.getElementById("sunrise").innerText = new Date(data.sys.sunrise);
+                       document.getElementById("sunset").innerText = new Date(data.sys.sunset);
+                       document.getElementById("temp").innerText = data.main.temp + '° celsius';
+                       document.getElementById("visibility").innerText = data.visibility + ' kilometre';
+                       document.getElementById("feels_like").innerText = data.feels_like;
+                       document.getElementById("description").innerText = data.weather.description + ' kilometre';
                 }
             },
 
